@@ -8,3 +8,5 @@ rm /etc/systemd/system/systat.service
 
 systemctl daemon-reload
 
+systemctl list-timers --all | grep systat
+systemctl status systat.service
