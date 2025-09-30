@@ -2,8 +2,8 @@
 Description=SyStat Matrix Timer
 
 [Timer]
-OnBootSec=10sec
-OnUnitActiveSec=30sec
+OnBootSec=60sec
+OnUnitActiveSec=30min
 Persistent=true
 
 [Install]
