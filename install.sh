@@ -8,7 +8,7 @@ bash /opt/systat-matrix/clean.sh
 
 chmod +x /opt/systat-matrix/run.sh
 
-pip3 install psutil gputil
+(PKG_MANAGER=$(command -v pip3 || command -v pip) && $PKG_MANAGER install psutil gputil)
 
 cp /opt/systat-matrix/systat.service /etc/systemd/system/systat.service
 
