@@ -1,0 +1,9 @@
+[Unit]
+Description=RUN the SyStat Matrix Statistics
+
+[Service]
+Type=oneshot
+ExecStart=/opt/systat-matrix/run.sh
+WorkingDirectory=/opt/systat-matrix
+User=root
+Group=root
