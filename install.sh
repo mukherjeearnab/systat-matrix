@@ -15,6 +15,7 @@ echo "Setting Permissions..."
 chmod +x /opt/systat-matrix/run.sh
 
 echo "Installing Python Dependencies..."
+apt update && apt install -y python3-pip
 (PKG_MANAGER=$(command -v pip3 || command -v pip) && $PKG_MANAGER install psutil gputil)
 
 echo "Copying Service Files..."
